@@ -4,10 +4,10 @@ import pickle
 import numpy as np
 
 import nltk
-from nltk.stem import  WordNetLemmatizer
+from nltk.stem import  WordNetLemmatizer as lemma
 
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Activation, Dropout
 from tensorflow.keras.optimizers import SGD
 
-print("done")
+

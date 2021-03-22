@@ -1,0 +1,34 @@
+{
+    "intents" : [
+        {
+            "tag": "greetings",
+            "patterns": ["hello", "hey", "hi", "hi there", "hello there", "greetings","good morning", "what's up", "good evening", "how is it going"],
+            "responses": ["Hello!", " Hey!", "Hi there!", "What can i do for you?"]
+        },
+        {
+            "tag": "greetings",
+            "patterns": ["hello", "hey", "hi", "hi there", "hello there", "greetings","good morning", "what's up", "good evening", "how is it going"],
+            "responses": ["Hello!", " Hey!", "Hi there!", "What can i do for you?"]
+        },
+        {
+            "tag": "greetings",
+            "patterns": ["hello", "hey", "hi", "hi there", "hello there", "greetings","good morning", "what's up", "good evening", "how is it going"],
+            "responses": ["Hello!", " Hey!", "Hi there!", "What can i do for you?"]
+        },
+        {
+            "tag": "greetings",
+            "patterns": ["hello", "hey", "hi", "hi there", "hello there", "greetings","good morning", "what's up", "good evening", "how is it going"],
+            "responses": ["Hello!", " Hey!", "Hi there!", "What can i do for you?"]
+        },
+        {
+            "tag": "greetings",
+            "patterns": ["hello", "hey", "hi", "hi there", "hello there", "greetings","good morning", "what's up", "good evening", "how is it going"],
+            "responses": ["Hello!", " Hey!", "Hi there!", "What can i do for you?"]
+        },
+        {
+            "tag": "greetings",
+            "patterns": ["hello", "hey", "hi", "hi there", "hello there", "greetings","good morning", "what's up", "good evening", "how is it going"],
+            "responses": ["Hello!", " Hey!", "Hi there!", "What can i do for you?"]
+        }
+    ]
+}
