@@ -2,6 +2,19 @@
 Project poppy is a custom made virtual assistant project.
 
 
+### Features 
+
+ - [ ] greet and bye
+ - [ ] tell time
+ - [ ] tell weather
+ - [ ] tell jokes
+ - [ ] search online
+ - [ ] play 
+ - [ ] write down notes
+ - [ ] manage calendar/classes
+ - [ ] change vioce settings
+
+
 #### links:
 this is to remind me what the hell was i doing when i get back to the project on a later date.
 
