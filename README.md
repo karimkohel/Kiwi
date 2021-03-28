@@ -2,6 +2,17 @@
 Project poppy is a custom made virtual assistant project.
 
 
+### What's happening 
+
+##### neuralintents file
+the generic class that holds all code responsible for the nueral netowrk
+
+##### poppy
+the main file that is self explanatory
+
+##### fx 
+the file responsible for all functions and logic to be run upon a certain request
+
 ### Features 
 
  - [ ] greet and bye
@@ -14,6 +25,12 @@ Project poppy is a custom made virtual assistant project.
  - [ ] manage calendar/classes
  - [ ] change vioce settings
  - [ ] give you attitude if you ask too much
+ - [ ] maybe have a C# GUI
+
+ #### TODO:
+
+ - [ ] fatten up the intents file
+ - [ ] tidy up fx file and prepare it for functions
 
 
 #### links:
