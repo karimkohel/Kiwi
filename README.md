@@ -13,6 +13,7 @@ Project poppy is a custom made virtual assistant project.
  - [ ] write down notes
  - [ ] manage calendar/classes
  - [ ] change vioce settings
+ - [ ] give you attitude if you ask too much
 
 
 #### links:
