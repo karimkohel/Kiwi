@@ -181,6 +181,7 @@ class GenericAssistant(IAssistant):
     def request(self, message):
         ints = self._predict_class(message)
 
+        print("DEBUGG : " , ints[0]['intent'] , " IN ", str(self.intent_methods.keys()))
         if ints[0]['intent'] in self.intent_methods.keys():
             self.intent_methods[ints[0]['intent']]()
         else:
