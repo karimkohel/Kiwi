@@ -13,7 +13,7 @@
         {
             "tag": "time",
             "patterns": ["what time is it", "do you have the time", "how much oclock", "time now", "whats the time", "tell time"],
-            "responses": ["Bye Nada!", "Bye!", "How the time passes.", "It's 5 PM somewhere", "It's now o'clock", "Getting you the time."]
+            "responses": ["N/A"]
         }
     ]
 }
