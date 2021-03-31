@@ -1,8 +1,8 @@
 
 
 def test():
-    print('test')
+    print('--- THE TEST FC RAN')
 
 mappings = {
-    'greetings' : test
+    'greeting' : test
 }

@@ -1,14 +1,19 @@
 {
     "intents" : [
         {
-            "tag": "greetings",
+            "tag": "greeting",
             "patterns": ["hello", "hey", "hi", "hi there", "hello there", "greetings","good morning", "what's up", "good evening", "how is it going"],
             "responses": ["Hello!", "Hey!", "Hi there!", "What can i do for you?"]
         },
         {
             "tag": "goodbye",
-            "patterns": ["bye", "good bye", "see you later", "go away", "bye bye", "cya", "have a good day"],
+            "patterns": ["bye", "good bye", "see you later", "go away", "bye bye", "cya", "have a good day", "close"],
             "responses": ["Bye Nada!", "Bye!", "Au revoir.", "Hope to see you soon.", "Talk later", "Goodbye!"]
+        },
+        {
+            "tag": "time",
+            "patterns": ["what time is it", "do you have the time", "how much oclock", "time now", "whats the time", "tell time"],
+            "responses": ["Bye Nada!", "Bye!", "How the time passes.", "It's 5 PM somewhere", "It's now o'clock", "Getting you the time."]
         }
     ]
 }
