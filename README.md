@@ -15,6 +15,8 @@ the file responsible for all functions and logic to be run upon a certain reques
 
 ### Features 
 
+ - [ ] implement text to speach
+ - [ ] speech to text
  - [ ] greet and bye
  - [ ] tell time
  - [ ] tell weather
