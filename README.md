@@ -15,8 +15,6 @@ the file responsible for all functions and logic to be run upon a certain reques
 
 ### Features 
 
- - [ ] implement text to speach
- - [ ] speech to text
  - [ ] greet and bye
  - [ ] tell time
  - [ ] tell weather
@@ -31,6 +29,9 @@ the file responsible for all functions and logic to be run upon a certain reques
 
  #### TODO:
 
+ - [ ] implement text to speach
+ - [ ] speech recognition
+    - [ ] **repair pyaudio problem then test the test file**
  - [ ] fatten up the intents file
  - [ ] tidy up fx file and prepare it for functions
 
