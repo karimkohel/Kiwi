@@ -18,8 +18,9 @@ def getWeather():
 def takeNotes():
     speech.speak("Ready to take your notes")
     note = speech.takeCommand()
-    with open("note.txt", 'w') as f:
+    with open("note.txt", 'a') as f:
         f.write(note)
+        f.write("\n---------------------\n")
     speech.speak("Ok done")
 
 
