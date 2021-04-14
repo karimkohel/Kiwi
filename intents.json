@@ -14,6 +14,26 @@
             "tag": "time",
             "patterns": ["what time is it", "do you have the time", "how much oclock", "time now", "whats the time", "tell time"],
             "responses": ["N/A"]
+        },
+        {
+            "tag": "weather",
+            "patterns": ["what temperature is it", "do you have the weather", "what's the temperature", "what's the weather", "how hot is it", "how hot is it", "tell me the weather", "do you know the weather"],
+            "responses": ["N/A"]
+        },
+        {
+            "tag": "jokes",
+            "patterns": ["tell me a joke", "are you funny", "can you tell jokes", "i love jokes", "can you tell a funny joke", "funny joke", "do you have jokes"],
+            "responses": ["No, I'm not funny", "Knock knock", "You're not even funny", "I hate your sense of humor", "Go ask siri", "Ok, but no", "Don't you have friends for that?", "I'm not even a real person go joke around with other people", "Really? are you that lonely"]
+        },
+        {
+            "tag": "knock",
+            "patterns": ["knock knock", "do you know any knock knock jokes", "can you tell jokes", "how hot is it", "how hot is it", "tell me the weather", "do you know the weather"],
+            "responses": ["Go knock somewhere else", "Knock not", "Who's there, not that i care because i have no door and I'm not even a real person"]
+        },
+        {
+            "tag": "knock",
+            "patterns": ["knock knock", "do you know any knock knock jokes", "can you tell jokes", "how hot is it", "how hot is it", "tell me the weather", "do you know the weather"],
+            "responses": ["Go knock somewhere else", "Knock not", "Who's there, not that i care because i have no door and I'm not even a real person"]
         }
     ]
 }
