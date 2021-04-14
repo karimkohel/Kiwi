@@ -40,6 +40,7 @@ opt-einsum==3.1.0
 protobuf==3.14.0
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
+PyAudio @ file:///D:/app%20data/python%20dependencies/PyAudio-0.2.11-cp36-cp36m-win_amd64.whl
 pycodestyle==2.6.0
 pycparser @ file:///tmp/build/80754af9/pycparser_1594388511720/work
 PyJWT==1.7.1
