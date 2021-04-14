@@ -1,5 +1,6 @@
 from datetime import datetime
 import requests
+import random
 
 import speech
 
@@ -23,9 +24,15 @@ def takeNotes():
         f.write("\n---------------------\n")
     speech.speak("Ok done")
 
+def goodbye():
+    l = ["Bye", "Au revoir", "Hope to see you soon", "Talk later", "Ok Goodbye!", "Goodbye then", "Ok I'll go now", "see you later"]
+    speech.speak(random.choice(l))
+    exit(0)
+
 
 mappings = {
     'time' : getTime,
     'weather' : getWeather,
-    'note' : takeNotes
+    'note' : takeNotes,
+    'goodbye': goodbye
 }

@@ -7,8 +7,8 @@
         },
         {
             "tag": "goodbye",
-            "patterns": ["bye", "good bye", "see you later", "go away", "bye bye", "cya", "have a good day", "close"],
-            "responses": ["Bye Nada!", "Bye!", "Au revoir.", "Hope to see you soon.", "Talk later", "Goodbye!"]
+            "patterns": ["bye", "good bye", "see you later", "go away", "bye bye", "have a good day", "close", "exit", "go to sleep", "bye"],
+            "responses": ["N/A"]
         },
         {
             "tag": "time",
