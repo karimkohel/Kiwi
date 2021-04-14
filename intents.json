@@ -31,9 +31,9 @@
             "responses": ["Go knock somewhere else", "Knock not", "Who's there, not that i care because i have no door and I'm not even a real person"]
         },
         {
-            "tag": "knock",
-            "patterns": ["knock knock", "do you know any knock knock jokes", "can you tell jokes", "how hot is it", "how hot is it", "tell me the weather", "do you know the weather"],
-            "responses": ["Go knock somewhere else", "Knock not", "Who's there, not that i care because i have no door and I'm not even a real person"]
+            "tag": "note",
+            "patterns": ["can you take a note", "write that down", "note this", "take note"],
+            "responses": ["N/A"]
         }
     ]
 }

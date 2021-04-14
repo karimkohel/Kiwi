@@ -13,8 +13,15 @@ def getWeather():
     temp = allData['main']['temp']
     print(weather, ", ", temp)
 
+def takeNotes():
+    note = input("Enter your note here: ")
+    with open("note.txt", 'w') as f:
+        f.write(note)
+    print("Ok done")
+
 
 mappings = {
     'time' : getTime,
-    'weather' : getWeather
+    'weather' : getWeather,
+    'note' : takeNotes
 }

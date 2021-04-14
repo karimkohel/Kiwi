@@ -21,7 +21,7 @@ the file responsible for all functions and logic to be run upon a certain reques
  - [X] tell jokes
  - [ ] search online
  - [ ] play 
- - [ ] write down notes
+ - [X] write down notes
  - [ ] manage calendar/classes
  - [ ] change vioce settings
  - [ ] give you attitude if you ask too much
