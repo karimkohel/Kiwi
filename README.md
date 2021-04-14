@@ -15,23 +15,23 @@ the file responsible for all functions and logic to be run upon a certain reques
 
 ### Features 
 
- - [ ] greet and bye
- - [ ] tell time
- - [ ] tell weather
- - [ ] tell jokes
+ - [X] greet and bye
+ - [X] tell time
+ - [X] tell weather
+ - [X] tell jokes
  - [ ] search online
  - [ ] play 
  - [ ] write down notes
  - [ ] manage calendar/classes
  - [ ] change vioce settings
  - [ ] give you attitude if you ask too much
- - [ ] maybe have a C# GUI
+ - [ ] maybe have a GUI
 
  #### TODO:
 
  - [ ] implement text to speach
- - [ ] speech recognition
-    - [ ] **repair pyaudio problem then test the test file**
+ - [X] speech recognition
+    - [X] repair pyaudio problem then test the test file
  - [ ] fatten up the intents file
  - [ ] tidy up fx file and prepare it for functions
 
