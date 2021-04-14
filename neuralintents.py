@@ -5,6 +5,7 @@ import json
 import pickle
 import numpy as np
 import os
+import speech
 
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
@@ -184,4 +185,4 @@ class GenericAssistant(IAssistant):
         if ints[0]['intent'] in self.intent_methods.keys():
             self.intent_methods[ints[0]['intent']]()
         else:
-            print(self._get_response(ints, self.intents))
+            speech.speak(self._get_response(ints, self.intents))

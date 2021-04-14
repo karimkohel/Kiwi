@@ -1,23 +1,26 @@
 from datetime import datetime
 import requests
 
+import speech
+
 def getTime():
     time = datetime.now().time()
     time = time.strftime("%I:%M %p")
-    print("It's ", time)
+    speech.speak("It's ", time)
 
 def getWeather():
     api = 'http://api.openweathermap.org/data/2.5/weather?q=Cairo&appid=04a716d70b54bf5c6c24dbb3dfa5db03&units=metric'
     allData = requests.get(api).json()
     weather = allData['weather'][0]['description']
     temp = allData['main']['temp']
-    print(weather, ", ", temp)
+    speech.speak(weather, ", ", temp)
 
 def takeNotes():
-    note = input("Enter your note here: ")
+    speech.speak("Ready to take your notes")
+    note = speech.takeCommand()
     with open("note.txt", 'w') as f:
         f.write(note)
-    print("Ok done")
+    speech.speak("Ok done")
 
 
 mappings = {
