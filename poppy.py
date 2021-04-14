@@ -8,9 +8,11 @@ assistant.save_model()
 
 done = False
 
+speech.speak("Hello, how can i help")
 while not done:
     message = speech.takeCommand()
     if message == "exit":
+        speech.speak("Ok, goodbye!")
         done = True
     else:
         assistant.request(message)
