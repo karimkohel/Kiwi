@@ -29,10 +29,11 @@ the file responsible for all functions and logic to be run upon a certain reques
 
  #### TODO:
 
+ - [ ] fatten up the intents file
+ - [ ] sophisticated functions
  - [X] implement text to speach
  - [X] speech recognition
     - [X] repair pyaudio problem then test the test file
- - [ ] fatten up the intents file
  - [X] tidy up fx file and prepare it for functions
 
 
