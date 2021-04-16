@@ -32,7 +32,7 @@ some custom made functions that haandles text to speach and speach recognition f
 
  #### TODO:
 
- - [ ] fatten up the intents file
+ - [X] fatten up the intents file
  - [ ] sophisticated functions
  - [X] implement text to speach
  - [X] speech recognition
