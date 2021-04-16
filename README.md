@@ -13,6 +13,9 @@ the main file that is self explanatory
 ##### fx 
 the file responsible for all functions and logic to be run upon a certain request
 
+##### speech
+some custom made functions that haandles text to speach and speach recognition for the assistant
+
 ### Features 
 
  - [X] greet and bye
