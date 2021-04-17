@@ -22,7 +22,7 @@ some custom made functions that haandles text to speach and speach recognition f
  - [X] tell time
  - [X] tell weather
  - [X] tell jokes
- - [ ] search online
+ - [ ] **search online**
  - [ ] play 
  - [X] write down notes
  - [ ] manage calendar/classes

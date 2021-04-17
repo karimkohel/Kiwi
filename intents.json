@@ -34,6 +34,11 @@
             "tag": "note",
             "patterns": ["can you take a note", "write that down", "note this", "take note"],
             "responses": ["N/A"]
+        },
+        {
+            "tag": "search",
+            "patterns": ["can you search for", "search that", "look it up", "can you look it up", "search for", ""],
+            "responses": ["What do you want me to search for", "what should is search for"]
         }
     ]
 }

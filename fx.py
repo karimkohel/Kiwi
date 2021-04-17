@@ -1,6 +1,7 @@
 from datetime import datetime
 import requests
 import random
+import webbrowser
 
 import speech
 
@@ -23,6 +24,14 @@ def takeNotes(intent):
         f.write(note)
         f.write("\n---------------------\n")
     speech.speak("Ok done")
+
+def search(intent):
+    speech.speak(intent)
+    searchTopic = speech.takeCommand()
+    speech.speak("This is what i found for " + searchTopic)
+    webbrowser.open('http://google.com', new=2)
+    # implement search feature with front end
+    # by learning google api
 
 def close(intent):
     speech.speak(intent)
