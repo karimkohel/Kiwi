@@ -26,11 +26,6 @@
             "responses": ["No, I'm not funny", "Knock knock", "You're not even funny", "I hate your sense of humor", "Go ask siri", "Ok, but no", "Don't you have friends for that?", "I'm not even a real person go joke around with other people", "Really? are you that lonely"]
         },
         {
-            "tag": "knock",
-            "patterns": ["knock knock", "do you know any knock knock jokes", "can you tell jokes", "how hot is it", "how hot is it", "tell me the weather", "do you know the weather"],
-            "responses": ["Go knock somewhere else", "Knock not", "Who's there, not that i care because i have no door and I'm not even a real person"]
-        },
-        {
             "tag": "note",
             "patterns": ["can you take a note", "write that down", "note this", "take note", "write a note", "add a note for me", "add note to notes", "add note"],
             "responses": ["what note should i add", "what note do you want me to take", "give me your note", "happy to take your note, what is it", "what do you want me to write down", "ok what should i note", "ready to take your notes", "as if you have important notes to take, what should i write down"]
