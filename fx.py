@@ -29,18 +29,16 @@ def search(intent):
     speech.speak(intent)
     searchTopic = speech.takeCommand()
     speech.speak("This is what i found for " + searchTopic)
-    webbrowser.open('http://google.com', new=2)
-    # implement search feature with front end
-    # by learning google api
+    webbrowser.open("https://www.google.com.tr/search?q={}".format(searchTopic), new=2)
 
 def close(intent):
     speech.speak(intent)
     exit(0)
 
-
 mappings = {
     'time' : getTime,
     'weather' : getWeather,
     'note' : takeNotes,
+    'search' : search,
     'goodbye': close
 }
