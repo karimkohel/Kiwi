@@ -16,7 +16,7 @@ def getWeather(intent):
     allData = requests.get(api).json()
     weather = allData['weather'][0]['description']
     temp = allData['main']['temp']
-    speech.speak(weather, ", ", temp)
+    speech.speak(intent + " " + weather + ", with temperatures around " + str(int(temp)) + " degrees")
 
 def takeNotes(intent):
     speech.speak("Ready to take your notes")

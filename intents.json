@@ -13,12 +13,12 @@
         {
             "tag": "time",
             "patterns": ["what time is it", "do you have the time", "how much o'clock", "time now", "whats the time", "tell time", "what hour is it"],
-            "responses": ["Its", "Time is relative but i guess its", "the time is", "as if you can't look at the computer clock, anyway its", "Are you late for something? because its", "right now its", "Its around", "it should be", "According to my virtual watch", "wait i'll check, yeah its", "", "the clock is"]
+            "responses": ["Its", "Time is relative but i guess its", "the time is", "as if you can't look at the computer clock, anyway its", "Are you late for something? because its", "right now its", "Its around", "it should be", "According to my virtual watch its", "wait i'll check, yeah its", "", "the clock is"]
         },
         {
             "tag": "weather",
-            "patterns": ["what temperature is it", "do you have the weather", "what's the temperature", "what's the weather", "how hot is it", "how hot is it", "tell me the weather", "do you know the weather"],
-            "responses": ["N/A"]
+            "patterns": ["what temperature is it", "do you have the weather", "what's the temperature", "what's the weather", "how hot is it", "how hot is it", "tell me the weather", "do you know the weather", "whats the weather today"],
+            "responses": ["what a day, its", "your area is expected to be", "today is", "expect", "dress well because today its", "today should be", "its gonna be", "its going to be", "looks like", "today feels like", "it feels like"]
         },
         {
             "tag": "jokes",
