@@ -5,6 +5,7 @@ settings = {
     "speech_speed": 170,
     "voice_number" : 1
 }
+
 speaker = tts.init()
 voices = speaker.getProperty('voices')
 speaker.setProperty('voice', voices[settings['voice_number']].id)
