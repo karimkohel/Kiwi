@@ -22,22 +22,13 @@ some custom made functions that haandles text to speach and speach recognition f
  - [X] tell time
  - [X] tell weather
  - [X] tell jokes
- - [ ] **search online**
- - [ ] play 
+ - [X] search online
  - [X] write down notes
+ - [ ] play music
  - [ ] manage calendar/classes
  - [ ] change vioce settings
  - [ ] give you attitude if you ask too much
  - [ ] maybe have a GUI
-
- #### TODO:
-
- - [X] fatten up the intents file
- - [ ] sophisticated functions
- - [X] implement text to speach
- - [X] speech recognition
-    - [X] repair pyaudio problem then test the test file
- - [X] tidy up fx file and prepare it for functions
 
 
 #### links:
