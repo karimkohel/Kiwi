@@ -19,12 +19,12 @@ def getWeather(intent):
     speech.speak(intent + " " + weather + ", with temperatures around " + str(int(temp)) + " degrees")
 
 def takeNotes(intent):
-    speech.speak("Ready to take your notes")
+    speech.speak(intent)
     note = speech.takeCommand()
-    with open("note.txt", 'a') as f:
+    with open("notes.txt", 'a') as f:
         f.write(note)
         f.write("\n---------------------\n")
-    speech.speak("Ok done")
+    speech.speak("Ok I added your new note to the notes file")
 
 def search(intent):
     speech.speak(intent)
