@@ -2,6 +2,8 @@ from datetime import datetime
 import requests
 import random
 import webbrowser
+import re
+from time import sleep
 
 import speech
 
@@ -36,10 +38,22 @@ def close(intent):
     speech.speak(intent)
     exit(0)
 
+def takeBreak(intent):
+    speech.speak(intent)
+    minutes = speech.takeCommand()
+    minutes = re.findall(r'\d+', minutes)
+    if minutes:
+        speech.speak("ok sleeping for " + minutes[0] + "minutes")
+        sleep(int(minutes[0])*60)
+        speech.speak("hi, I'm back")
+    else:
+        speech.speak("Sorry didnt catch that, canceling command")
+
 mappings = {
     'time' : getTime,
     'weather' : getWeather,
     'note' : takeNotes,
     'search' : search,
+    'sleep': takeBreak,
     'goodbye': close
 }

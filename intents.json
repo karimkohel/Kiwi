@@ -54,6 +54,11 @@
             "tag": "maker",
             "patterns": ["who made you", "how do you live", "who is your developer", "who is your daddy"],
             "responses": ["I was made by karim for a specific reason", "i was made to serve a special someone by karim", "karim made me to do something for someone, but never told me what exactly", "I'm not sure what is my true purpose but i'm sure karim my developer knows"]
+        },
+        {
+            "tag": "sleep",
+            "patterns": ["give me a break", "leave me for a while", "go too sleep", "take a break", "take a walk", "leave me for some time", "wait for some time"],
+            "responses": ["how much minutes do you want me to sleep", "how much minutes do you want me to sleep", "how many minutes should i take", "ok for how many minutes", "how many minutes till i wake up again"]
         }
     ]
 }
