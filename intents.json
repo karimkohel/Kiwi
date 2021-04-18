@@ -39,6 +39,22 @@
             "tag": "search",
             "patterns": ["can you search for", "search that", "look it up", "can you look it up", "search for", "look something up for me"],
             "responses": ["What do you want me to search for", "what should is search for", "hit me with your search", "what do you need to search for", "your search is my command, literally, what should i search for"]
+        },
+        {
+            "tag": "breif",
+            "patterns": ["who are you", "how old are you", "tell me about yourself", "when is your birthday", "talk about yourself", "what are you"],
+            "responses": ["My name is Poppy and i think my birthday is May 16", "Poppy, call me poppy like the poppy flower, i was born on 16th of May", "i think my name is poppy after the flower", "my name is poppy and my birthday is 16th of May", "i think i was born on the 19th of May with the name"]
+        },
+        {
+            "tag": "name",
+            "patterns": ["whats your name", "what should i call you", "do you have a name"],
+            "responses": ["the name is poppy", "Poppy, like the poppy flower", "i think my name is poppy after the flower", "call me poppy", "poppy, at your service"]
+        },
+        {
+            "tag": "maker",
+            "patterns": ["who made you", "how do you live", "who is your developer"],
+            "responses": ["I was made by karim for a specific reason", "i was made to serve a special someone by karim", "karim made me to do something for someone, but never told me what exactly", "I'm not sure what is my true purpose but i'm sure karim my developer knows"]
         }
+
     ]
 }
