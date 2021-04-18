@@ -49,11 +49,15 @@ def takeBreak(intent):
     else:
         speech.speak("Sorry didnt catch that, canceling command")
 
+def setReminder(intent):
+    pass
+
 mappings = {
     'time' : getTime,
     'weather' : getWeather,
     'note' : takeNotes,
     'search' : search,
     'sleep': takeBreak,
+    'setreminder' : setReminder,
     'goodbye': close
 }
