@@ -8,7 +8,8 @@ import speech
 def getTime(intent):
     time = datetime.now().time()
     time = time.strftime("%I:%M %p")
-    speech.speak("It's " + time)
+    time = time.lstrip("0")
+    speech.speak(intent + " " + time)
 
 def getWeather(intent):
     api = 'http://api.openweathermap.org/data/2.5/weather?q=Cairo&appid=04a716d70b54bf5c6c24dbb3dfa5db03&units=metric'
