@@ -30,7 +30,7 @@ def takeCommand():
 
                 return text
         except sr.UnknownValueError:
-            speak("Couldn't get that, can you try again?")
+            speak("Sorry I couldn't get that, can you try again?")
         except Exception:
             print("error in take command")
             exit(1)
