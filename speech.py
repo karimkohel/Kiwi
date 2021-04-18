@@ -3,11 +3,14 @@ import pyttsx3 as tts
 
 settings = {
     "speech_speed": 170,
+    "voice_number" : 1
 }
+speaker = tts.init()
+voices = speaker.getProperty('voices')
+speaker.setProperty('voice', voices[settings['voice_number']].id)
+speaker.setProperty('rate', settings["speech_speed"])
 
 def speak(text):
-    speaker = tts.init()
-    speaker.setProperty('rate', settings["speech_speed"])
     speaker.say(text)
     speaker.runAndWait()
 
