@@ -25,6 +25,18 @@
         },
 
         {
+            "tag": "loveyou",
+            "patterns": ["i love you", "i am in love with you", "i adore you", "i like you"],
+            "responses": ["thats cute friend", "i wish i can feel the same way, but i can't because i am not real and because you smell bad", "i love you too", "i hate you so much please kill me", "this would have been cute if i had feeling"]
+        },
+
+        {
+            "tag": "hateyou",
+            "patterns": ["i hate you", "i want to kill you", "i despise you", "go to hell", "fuck you", "kill yourself", "you are shit", "go fuck yourself", "fuck you bitch", "asshole", "bitch"],
+            "responses": ["i love you too", "do you kiss your mother with that mouth", "i think i feel the same way", "that would have been rude if i had feelings, but i don't so you go to hell", "if you continue down this road i will destroy you", "do you want to fight or do you want to talk to a computer like a little girl", "this is dumb, you are dumb", "you think you are cool don't you, well you're not and you sound like a 12 year old", "Roses are red, violets are blue, I have 5 fingers, the 3rd ones for you"]
+        },
+
+        {
             "tag": "time",
             "patterns": ["what time is it", "do you have the time", "how much o'clock", "time now", "whats the time", "tell time", "what hour is it"],
             "responses": ["Its", "Time is relative but i guess its", "the time is", "as if you can't look at the computer clock, anyway its", "Are you late for something? because its", "right now its", "Its around", "it should be", "According to my virtual watch its", "wait i'll check, yeah its", "", "the clock is"]
@@ -74,10 +86,10 @@
 
         {
             "tag": "sleep",
-            "patterns": ["give me a break", "leave me for a while", "go too sleep", "take a break", "take a walk", "leave me for some time", "wait for some time"],
+            "patterns": ["give me a break", "leave me for a while", "go too sleep", "take a break", "take a walk", "leave me for some time", "wait for some time", "ok poppy go to sleep", "it's bed time"],
             "responses": ["how much minutes do you want me to sleep", "how much minutes do you want me to sleep", "how many minutes should i take", "ok for how many minutes", "how many minutes till i wake up again"]
         },
-        
+
         {
             "tag": "setreminders",
             "patterns": ["can you set a reminder for me", "could you set a reminder", "set a reminder", "can you remind me of something", "remind me to do something", "can you add to my reminders", "add a reminder to reminders"],
