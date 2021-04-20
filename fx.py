@@ -4,6 +4,7 @@ import random
 import webbrowser
 import re
 from time import sleep
+import sys
 
 import models
 import speech
@@ -37,7 +38,7 @@ def search(intent):
 
 def close(intent):
     speech.speak(intent)
-    exit(0)
+    sys.exit(0)
 
 def takeBreak(intent):
     speech.speak(intent)
