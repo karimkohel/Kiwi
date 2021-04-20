@@ -5,6 +5,7 @@ import webbrowser
 import re
 from time import sleep
 
+
 import speech
 
 def getTime(intent):
@@ -50,7 +51,7 @@ def takeBreak(intent):
         speech.speak("Sorry didnt catch that, canceling command")
 
 def setReminder(intent):
-    pass
+    speech.speak(intent)
 
 mappings = {
     'time' : getTime,
