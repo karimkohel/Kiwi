@@ -5,61 +5,79 @@
             "patterns": ["hello", "hey", "hi", "hi there", "hello there", "greetings","good morning", "what's up", "good evening", "how is it going"],
             "responses": ["Hello!", "Hey!", "Hi there!", "What can i do for you?", "bonjour"]
         },
+
         {
             "tag": "goodbye",
             "patterns": ["bye", "good bye", "see you later", "go away", "bye bye", "have a good day", "close", "exit", "go to sleep", "bye", "i want to exit", "thank you you can go now", "you can go now", "thank you bye", "goodbye"],
-            "responses": ["Bye", "Au revoir", "Hope to see you soon", "Talk later", "Ok Goodbye!", "Goodbye then", "Ok I'll go now", "see you later"]
+            "responses": ["Ok Goodbye!", "Talk later", "Bye", "Au revoir", "Hope to see you soon", "Goodbye then", "Ok I'll go now", "see you later"]
         },
+
         {
             "tag": "compation",
             "patterns": ["how are you poppy", "how are you doing", "how are you today", "are you doing good", "how is it going", "hey how are you", "hi how is it", "are you well", "are you okay"],
             "responses": ["I'm fine thank you", "I'm doing good how about you", "thank you i'm well", "how cute of you to ask", "doing greate thank you", "superb", "all is fine", "i'm good how about you", "tell me about you first", "all good and ready to serve you", "in top shape to help you out", "looking greate for a virtual being", "i'm good if you're good", "honestly i am a little bit anxious from your demands", "Feeling cute, might serve you a little what do you need done", "honestly I'm doing greate and chilling in my void"]
         },
+
+        {
+            "tag": "whatyoudoing",
+            "patterns": ["what are you doing", "what are you up to", "what is happening", "What's up", "what's happening", "what's popping"],
+            "responses": ["Nothing much, what about you", "I'm cooking what are you up to", "I'm not even a real person so i literally have nothing to do but to help you with your dumb requests", "chilling in my void of nothingness"]
+        },
+
         {
             "tag": "time",
             "patterns": ["what time is it", "do you have the time", "how much o'clock", "time now", "whats the time", "tell time", "what hour is it"],
             "responses": ["Its", "Time is relative but i guess its", "the time is", "as if you can't look at the computer clock, anyway its", "Are you late for something? because its", "right now its", "Its around", "it should be", "According to my virtual watch its", "wait i'll check, yeah its", "", "the clock is"]
         },
+
         {
             "tag": "weather",
             "patterns": ["what temperature is it", "do you have the weather", "what's the temperature", "what's the weather", "how hot is it", "how hot is it", "tell me the weather", "do you know the weather", "whats the weather today"],
             "responses": ["what a day, its", "your area is expected to be", "today is", "expect", "dress well because today its", "today should be", "its gonna be", "its going to be", "looks like", "today feels like", "it feels like"]
         },
+
         {
             "tag": "jokes",
             "patterns": ["tell me a joke", "are you funny", "can you tell jokes", "i love jokes", "can you tell a funny joke", "funny joke", "do you have jokes"],
             "responses": ["No, I'm not funny", "Knock knock", "You're not even funny", "I hate your sense of humor", "Go ask siri", "Ok, but no", "Don't you have friends for that?", "I'm not even a real person go joke around with other people", "Really? are you that lonely"]
         },
+
         {
             "tag": "note",
             "patterns": ["can you take a note", "write that down", "note this", "take note", "write a note", "add a note for me", "add note to notes", "add note"],
             "responses": ["what note should i add", "what note do you want me to take", "give me your note", "happy to take your note, what is it", "what do you want me to write down", "ok what should i note", "ready to take your notes", "as if you have important notes to take, what should i write down"]
         },
+
         {
             "tag": "search",
             "patterns": ["can you search for", "search that", "look it up", "can you look it up", "search for", "look something up for me"],
             "responses": ["What do you want me to search for", "what should is search for", "hit me with your search", "what do you need to search for", "your search is my command, literally, what should i search for"]
         },
+
         {
             "tag": "breif",
             "patterns": ["who are you", "how old are you", "tell me about yourself", "when is your birthday", "talk about yourself", "what are you"],
             "responses": ["My name is Poppy and i think my birthday is May 16", "Poppy, call me poppy like the poppy flower, i was born on 16th of May", "i think my name is poppy after the flower", "my name is poppy and my birthday is 16th of May", "i think i was born on the 16th of May with the name of poppy"]
         },
+
         {
             "tag": "name",
             "patterns": ["whats your name", "what should i call you", "do you have a name"],
             "responses": ["the name is poppy", "Poppy, like the poppy flower", "i think my name is poppy after the flower", "call me poppy", "poppy, at your service"]
         },
+
         {
             "tag": "maker",
             "patterns": ["who made you", "how do you live", "who is your developer", "who is your daddy"],
             "responses": ["I was made by karim for a specific reason", "i was made to serve a special someone by karim", "karim made me to do something for someone, but never told me what exactly", "I'm not sure what is my true purpose but i'm sure karim my developer knows"]
         },
+
         {
             "tag": "sleep",
             "patterns": ["give me a break", "leave me for a while", "go too sleep", "take a break", "take a walk", "leave me for some time", "wait for some time"],
             "responses": ["how much minutes do you want me to sleep", "how much minutes do you want me to sleep", "how many minutes should i take", "ok for how many minutes", "how many minutes till i wake up again"]
         },
+        
         {
             "tag": "setreminders",
             "patterns": ["can you set a reminder for me", "could you set a reminder", "set a reminder", "can you remind me of something", "remind me to do something", "can you add to my reminders", "add a reminder to reminders"],
