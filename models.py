@@ -1,6 +1,9 @@
 
 class Reminder():
-    pass
+    def __init__(self, reminder, dueDate):
+        self.reminder = reminder
+        self.dueDate = dueDate
 
 class note():
-    pass
+    def __init__(self, note):
+        self.note = note
