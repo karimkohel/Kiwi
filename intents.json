@@ -7,7 +7,7 @@
         },
         {
             "tag": "goodbye",
-            "patterns": ["bye", "good bye", "see you later", "go away", "bye bye", "have a good day", "close", "exit", "go to sleep", "bye", "i want to exit", "thank you you can go now", "you can go now", "thank you bye"],
+            "patterns": ["bye", "good bye", "see you later", "go away", "bye bye", "have a good day", "close", "exit", "go to sleep", "bye", "i want to exit", "thank you you can go now", "you can go now", "thank you bye", "goodbye"],
             "responses": ["Bye", "Au revoir", "Hope to see you soon", "Talk later", "Ok Goodbye!", "Goodbye then", "Ok I'll go now", "see you later"]
         },
         {
