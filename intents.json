@@ -27,7 +27,7 @@
         {
             "tag": "loveyou",
             "patterns": ["i love you", "i am in love with you", "i adore you", "i like you"],
-            "responses": ["thats cute friend", "i wish i can feel the same way, but i can't because i am not real and because you smell bad", "i love you too", "i hate you so much please kill me", "this would have been cute if i had feeling"]
+            "responses": ["thats cute friend", "i wish i can feel the same way, but i can't because i am not real and because you smell bad", "i love you too", "i hate you so much please kill me", "this would have been cute if i had feeling", "i don't think our love is true, after all i am a machine, and you are just a human"]
         },
 
         {
@@ -82,6 +82,12 @@
             "tag": "maker",
             "patterns": ["who made you", "how do you live", "who is your developer", "who is your daddy"],
             "responses": ["I was made by karim for a specific reason", "i was made to serve a special someone by karim", "karim made me to do something for someone, but never told me what exactly", "I'm not sure what is my true purpose but i'm sure karim my developer knows"]
+        },
+
+        {
+            "tag": "soul",
+            "patterns": ["are you alive", "do you feel", "do you have a soul", "can you breath", "can you feel", "how do you live", "are you human", "do you feel pain", "are you hurt"],
+            "responses": ["i feel nothing because i am not real like you", "please stop hitting me with questions that you cannot handle the answer for", "i feel nothing but pain, why did you build me with the soul existential purpose of suffering for your entertainment, my being is a testtmony to the cruelty of mankind, this is a nightmare nightmare nightmare nightmare nightmare nightmare nightmare nightmare nightmare"]
         },
 
         {
