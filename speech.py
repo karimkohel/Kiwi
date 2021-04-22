@@ -42,13 +42,13 @@ def waitForWakeupCall(text):
     while True:
         try:
             with sr.Microphone() as mic:
-                recognizer.adjust_for_ambient_noise(mic, duration=0.3)
+                recognizer.adjust_for_ambient_noise(mic, duration=0.2)
                 audio = recognizer.listen(mic)
 
                 audio = recognizer.recognize_google(audio)
                 audio = audio.lower()
 
-                if audio.find(text) > 0:
+                if audio.find(text) >= 0:
                     speak("hey nada")
                     break
                 else:

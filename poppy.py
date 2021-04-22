@@ -7,7 +7,9 @@ assistant.train_model()
 assistant.save_model()
 
 
-speech.speak("Hello, how can i help")
+speech.waitForWakeupCall("hey")
+
 while True:
     message = speech.takeCommand()
-    assistant.request(message)
+    value = assistant.request(message)
+    print(value)
