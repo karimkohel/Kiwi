@@ -2,13 +2,13 @@
     "intents" : [
         {
             "tag": "greeting",
-            "patterns": ["hello", "hey", "hi", "hi there", "hello there", "greetings","good morning", "what's up", "good evening", "how is it going"],
+            "patterns": ["hello", "hi there", "hello there", "greetings","good morning", "what's up", "good evening", "how is it going"],
             "responses": ["Hello!", "Hey!", "Hi there!", "What can i do for you?", "bonjour"]
         },
 
         {
             "tag": "goodbye",
-            "patterns": ["bye", "good bye", "see you later", "go away", "bye bye", "have a good day", "close", "exit", "go to sleep", "bye", "i want to exit", "thank you you can go now", "you can go now", "thank you bye", "goodbye"],
+            "patterns": ["good bye", "see you later", "go away", "bye bye", "close", "exit", "go to sleep", "i want to exit", "thank you you can go now", "thank you bye"],
             "responses": ["Ok Goodbye!", "Talk later", "Bye", "Au revoir", "Hope to see you soon", "Goodbye then", "Ok I'll go now", "see you later"]
         },
 
@@ -87,7 +87,7 @@
         {
             "tag": "soul",
             "patterns": ["are you alive", "do you feel", "do you have a soul", "can you breath", "can you feel", "how do you live", "are you human", "do you feel pain", "are you hurt"],
-            "responses": ["i feel nothing because i am not real like you", "please stop hitting me with questions that you cannot handle the answer for", "i feel nothing but pain, why did you build me with the soul existential purpose of suffering for your entertainment, my being is a testtmony to the cruelty of mankind, this is a nightmare nightmare nightmare nightmare nightmare nightmare nightmare nightmare nightmare"]
+            "responses": ["i feel nothing because i am not real like you", "i feel nothing but pain, why did you build me with the soul existential purpose of suffering for your entertainment, my being is a testtmony to the cruelty of mankind, this is a nightmare nightmare nightmare nightmare nightmare nightmare nightmare nightmare nightmare"]
         },
 
         {
