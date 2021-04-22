@@ -16,10 +16,9 @@ def speak(text):
     speaker.runAndWait()
 
 def takeCommand():
-    done = False
     recognizer = sr.Recognizer();
 
-    while not done:
+    while True:
         try:
             with sr.Microphone() as mic:
                 recognizer.adjust_for_ambient_noise(mic, duration=0.2)
