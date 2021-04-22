@@ -11,5 +11,4 @@ speech.waitForWakeupCall("hey")
 
 while True:
     message = speech.takeCommand()
-    value = assistant.request(message)
-    print(value)
+    assistant.request(message)
