@@ -67,8 +67,13 @@ def setReminder(intent):
     speech.speak("when is this reminder due")
     dueDate = speech.takeCommand()
     reminder = models.Reminder(text, dueDate)
-    reminders.append(reminder)
-    models.Reminder.writeReminders(reminders, "reminder.p")
+    speech.speak("Reminder set for " + reminder.dueDate)
+    if speech.confirmCommand():
+        reminders.append(reminder)
+        models.Reminder.writeReminders(reminders, "reminder.p")
+    else:
+        speech.speak("You didn't confirm, canceling command")
+
 
 def clearReminders(intent):
     speech.speak(intent)
@@ -90,6 +95,6 @@ mappings = {
     'note' : takeNotes,
     'search' : search,
     'sleep': takeBreak,
-    'setreminder' : setReminder,
+    'setreminders' : setReminder,
     'goodbye': close
 }
