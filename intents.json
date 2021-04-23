@@ -100,6 +100,12 @@
             "tag": "setreminders",
             "patterns": ["can you set a reminder for me", "could you set a reminder", "set a reminder", "can you remind me of something", "remind me to do something", "can you add to my reminders", "add a reminder to reminders"],
             "responses": ["what do you want me to remind you of", "sure, what do you want me to write down", "what should i remind you of", "please specify the reminder", "what reminder should i set", "ok setting reminder what should i set"]
+        },
+
+        {
+            "tag": "readreminders",
+            "patterns": ["What reminders do i have", "read me my reminders", "do i have any reminders", "read reminders", "tell me my reminders", "what are my reminders", ""],
+            "responses": [""]
         }
     ]
 }
