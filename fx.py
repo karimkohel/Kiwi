@@ -52,6 +52,13 @@ def takeBreak(intent):
     else:
         speech.speak("Sorry didnt catch that, canceling command")
 
+def readReminders(intent):
+    speech.speak(intent)
+    reminders = models.Reminder.readReminders("reminder.p")
+    for reminder in reminders:
+        speech.speak(reminder.text)
+        speech.speak(reminder.dueDate)
+
 def setReminder(intent):
     reminders = models.Reminder.readReminders("reminder.p")
     speech.speak(intent)
