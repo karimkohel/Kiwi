@@ -69,6 +69,19 @@ def setReminder(intent):
     reminders.append(reminder)
     models.Reminder.writeReminders(reminders, "reminder.p")
 
+def clearReminders(intent):
+    speech.speak(intent)
+    confirmed = speech.confirmCommand()
+
+    if confirmed:
+        if os.path.exists("reminder.p"):
+            os.remove("reminder.p")
+            speech.speak("ok, cleared all your reminders")
+        else:
+            speech.speak("you have no reminders")
+    else:
+        speech("you did not confirm, canceling task")
+
 
 mappings = {
     'time' : getTime,
