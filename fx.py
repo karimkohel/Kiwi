@@ -5,6 +5,7 @@ import webbrowser
 import re
 from time import sleep
 import sys
+import pickle
 
 import models
 import speech
@@ -52,7 +53,15 @@ def takeBreak(intent):
         speech.speak("Sorry didnt catch that, canceling command")
 
 def setReminder(intent):
+    reminders = models.Reminder.readReminders("reminder.p")
     speech.speak(intent)
+    text = speech.takeCommand()
+    speech.speak("when is this reminder due")
+    dueDate = speech.takeCommand()
+    reminder = models.Reminder(text, dueDate)
+    reminders.append(reminder)
+    models.Reminder.writeReminders(reminders, "reminder.p")
+
 
 mappings = {
     'time' : getTime,
