@@ -6,6 +6,7 @@ import re
 from time import sleep
 import sys
 import pickle
+import os
 
 import models
 import speech
