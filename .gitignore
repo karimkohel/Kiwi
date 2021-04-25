@@ -2,8 +2,9 @@
 
 __pycache__
 
-test_model*
+*.pkl
+*.h5
 
-overflow*
+*test*
 
 note*
