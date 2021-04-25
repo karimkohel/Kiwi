@@ -30,7 +30,7 @@ def takeNotes(intent):
     with open("notes.txt", 'a') as f:
         f.write(note)
         f.write("\n---------------------\n")
-    speech.speak("Ok I added your new note to the notes file")
+    speech.speak("Note added.")
 
 def search(intent):
     speech.speak(intent)
