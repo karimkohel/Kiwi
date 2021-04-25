@@ -56,9 +56,9 @@ def takeBreak(intent):
 def readReminders(intent):
     speech.speak(intent)
     reminders = models.Reminder.readReminders("reminder.p")
-    for reminder in reminders:
-        speech.speak(reminder.text)
-        speech.speak(reminder.dueDate)
+    for i, reminder in enumerate(reminders):
+        speech.speak(f"reminder {i+1} is, " + reminder.text)
+        speech.speak("Due, " + reminder.dueDate)
 
 def setReminder(intent):
     reminders = models.Reminder.readReminders("reminder.p")
@@ -71,6 +71,7 @@ def setReminder(intent):
     if speech.confirmCommand():
         reminders.append(reminder)
         models.Reminder.writeReminders(reminders, "reminder.p")
+        speech.speak("Ok, done")
     else:
         speech.speak("You didn't confirm, canceling command")
 
