@@ -104,8 +104,8 @@
 
         {
             "tag": "readreminders",
-            "patterns": ["What reminders do i have", "read me my reminders", "do i have any reminders", "read reminders", "tell me my reminders", "what are my reminders", ""],
-            "responses": [""]
+            "patterns": ["What reminders do i have", "read me my reminders", "do i have any reminders", "read reminders", "tell me my reminders", "what are my reminders"],
+            "responses": ["here you go", "I'll read them to you", "let me check your reminders"]
         }
     ]
 }
