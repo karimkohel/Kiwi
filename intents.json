@@ -106,6 +106,12 @@
             "tag": "readreminders",
             "patterns": ["What reminders do i have", "read me my reminders", "do i have any reminders", "read reminders", "tell me my reminders", "what are my reminders"],
             "responses": ["here you go", "I'll read them to you", "let me check your reminders"]
+        },
+        
+        {
+            "tag": "clearreminders",
+            "patterns": ["clear my reminders", "clear reminders", "empty reminders", "delete reminders", "throw away reminders", "clear my schedule", "empty schedule"],
+            "responses": ["happy to see you free", "will do", "clearing reminders", "doing it", "a free weekend at last"]
         }
     ]
 }
