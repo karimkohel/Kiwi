@@ -96,5 +96,6 @@ mappings = {
     'search' : search,
     'sleep': takeBreak,
     'setreminders' : setReminder,
+    'readreminders' : readReminders,
     'goodbye': close
 }
