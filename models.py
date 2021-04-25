@@ -7,7 +7,7 @@ class Reminder():
         self.dueDate = dueDate
 
     @staticmethod
-    def readReminders(file = "reminder.p"):
+    def readReminders(file = "reminder.pkl"):
         try:
             reminders = pickle.load(open(file, 'rb'))
         except FileNotFoundError:
@@ -15,19 +15,22 @@ class Reminder():
         return reminders
 
     @staticmethod
-    def writeReminders(reminders, file = 'reminder.p'):
+    def writeReminders(reminders, file = 'reminder.pkl'):
         pickle.dump(reminders, open(file, 'wb'))
 
 
-class note():
+class Note():
     def __init__(self, text):
         self.note = text
 
+    @staticmethod
+    def readNotes(file = "notes.pkl"):
+        try:
+            notes = pickle.load(open(file, 'rb'))
+        except FileNotFoundError:
+            notes = []
+        return notes
 
     @staticmethod
-    def readReminders():
-        return pickle.load(open("reminder.p", 'rb'))
-
-    @staticmethod
-    def writeReminders(reminders):
-        pickle.dump(reminders, open('reminder.p', 'wb'))
+    def writeNotes(notes, file = 'notes.pkl'):
+        pickle.dump(notes, open(file, 'wb'))
