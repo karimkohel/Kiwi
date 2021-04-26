@@ -112,6 +112,12 @@
             "tag": "clearreminders",
             "patterns": ["clear my reminders", "clear reminders", "empty reminders", "delete reminders", "throw away reminders", "clear my schedule", "empty schedule"],
             "responses": ["happy to see you free", "will do", "clearing reminders", "doing it", "a free weekend at last"]
+        },
+
+        {
+            "tag": "playmusic",
+            "patterns": ["can you play some music", "", "play music", "can you play a song", "put on music"],
+            "responses": ["what song would you like me to play", "what do you want to listen to", "what are you in the mood for", "do you have a specific song in mind", "what should i play"]
         }
     ]
 }
