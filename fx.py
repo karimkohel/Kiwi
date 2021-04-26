@@ -40,7 +40,7 @@ def search(intent):
 
 def close(intent):
     speech.speak(intent)
-    sys.exit(0)
+    return True
 
 def takeBreak(intent):
     speech.speak(intent)
