@@ -62,7 +62,7 @@
 
         {
             "tag": "search",
-            "patterns": ["can you search for", "search that", "look it up", "can you look it up", "search for", "look something up for me"],
+            "patterns": ["can you search for", "search that", "look it up", "can you look it up", "search for", "look something up for me", "google something", "google this"],
             "responses": ["What do you want me to search for", "what should is search for", "hit me with your search", "what do you need to search for", "your search is my command, literally, what should i search for"]
         },
 
