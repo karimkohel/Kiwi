@@ -7,8 +7,14 @@ assistant.train_model()
 assistant.save_model()
 
 
-speech.waitForWakeupCall("hey")
-
 while True:
-    message = speech.takeCommand()
-    assistant.request(message)
+
+    speech.waitForWakeupCall("hey")
+    working = True
+
+    while working:
+        message = speech.takeCommand()
+        working = assistant.request(message)
+
+    if message == "exit":
+        break

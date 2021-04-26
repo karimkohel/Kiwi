@@ -183,6 +183,11 @@ class GenericAssistant(IAssistant):
         ints = self._predict_class(message)
 
         if ints[0]['intent'] in self.intent_methods.keys():
-            self.intent_methods[ints[0]['intent']](self._get_response(ints, self.intents))
+            takeBreak = self.intent_methods[ints[0]['intent']](self._get_response(ints, self.intents))
+            if takeBreak:
+                return False
+            else:
+                return True
         else:
             speech.speak(self._get_response(ints, self.intents))
+            return True
