@@ -89,6 +89,12 @@ def clearReminders(intent):
     else:
         speech("you did not confirm, canceling task")
 
+def playMusic(intent):
+    speech.speak(intent)
+    music = speech.takeCommand()
+    pass
+
+
 
 mappings = {
     'time' : getTime,
