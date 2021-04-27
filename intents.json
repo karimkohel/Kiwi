@@ -116,13 +116,13 @@
 
         {
             "tag": "playmusic",
-            "patterns": ["can you play some music", "", "play music", "can you play a song", "put on music"],
-            "responses": ["what song would you like me to play", "what do you want to listen to", "what are you in the mood for", "do you have a specific song in mind", "what should i play"]
+            "patterns": ["can you play some music", "", "play music", "can you play a song", "put on music", "start the music", "play me a song", "i want to hear some music"],
+            "responses": ["shuffling your music", "lets see your music style", "here you go then", "i hope you can dance", "i was already in the mood for music", "playing music now"]
         },
 
         {
             "tag": "downloadmusic",
-            "patterns": ["install music", "", "download music", "new music", "can you download new music", "get download new music"],
+            "patterns": ["install music", "download music", "new music", "can you download new music", "get download new music", "need new music"],
             "responses": ["getting you the music you deserve, what do you want", "what should i download", "what is your desired song", "looking for something new, what should i download", "what should i install"]
         }
     ]
