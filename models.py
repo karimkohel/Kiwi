@@ -1,5 +1,6 @@
 import pickle
 import os
+import random
 
 class Reminder():
     def __init__(self, text, dueDate):
@@ -57,6 +58,12 @@ class Music():
             return True
 
     def shuffleMusic(self):
-        pass
+        file = ""
+        while not ("mp3" in file):
+            file = self.musicFiles[random.randint(0, len(self.musicFiles))]
+        
+        pass # check that file is found and then start track
+
+
 
 
