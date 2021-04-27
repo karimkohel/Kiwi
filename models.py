@@ -1,5 +1,5 @@
 import pickle
-
+import os
 
 class Reminder():
     def __init__(self, text, dueDate):
@@ -34,3 +34,29 @@ class Note():
     @staticmethod
     def writeNotes(notes, file = 'notes.pkl'):
         pickle.dump(notes, open(file, 'wb'))
+
+class Music():
+
+    def __init__(self, folderPath):
+        self.folderPath = folderPath
+        self.musicFiles = None
+
+    def checkFolder(self):
+        return os.path.exists(self.folderPath)
+    
+    def checkMusicExists(self):
+
+        files = os.listdir(self.folderPath)
+
+        if len(files) < 1:
+            return False
+        elif not any("mp3" in element for element in files):
+            return False
+        else:
+            self.musicFiles = files
+            return True
+
+    def shuffleMusic(self):
+        pass
+
+

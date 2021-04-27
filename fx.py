@@ -14,7 +14,7 @@ import speech
 
 with open("settings.json") as f:
     settings = json.load(f)
-    
+
 
 def getTime(intent):
     time = datetime.now().time()
@@ -80,7 +80,6 @@ def setReminder(intent):
     else:
         speech.speak("You didn't confirm, canceling command")
 
-
 def clearReminders(intent):
     speech.speak(intent)
     confirmed = speech.confirmCommand()
@@ -98,7 +97,6 @@ def playMusic(intent):
     speech.speak(intent)
     music = speech.takeCommand()
     pass
-
 
 def downloadMusic(intent):
     pass
