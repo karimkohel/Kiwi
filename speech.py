@@ -1,10 +1,10 @@
 import speech_recognition as sr
 import pyttsx3 as tts
+import json
 
-settings = {
-    "speech_speed": 170,
-    "voice_number" : 1
-}
+with open("settings.json") as f:
+    settings = json.load(f)
+
 
 speaker = tts.init()
 voices = speaker.getProperty('voices')

@@ -7,9 +7,14 @@ from time import sleep
 import sys
 import pickle
 import os
+import json
 
 import models
 import speech
+
+with open("settings.json") as f:
+    settings = json.load(f)
+    
 
 def getTime(intent):
     time = datetime.now().time()
