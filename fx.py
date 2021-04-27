@@ -95,6 +95,8 @@ def playMusic(intent):
     pass
 
 
+def downloadMusic(intent):
+    pass
 
 mappings = {
     'time' : getTime,
@@ -105,5 +107,7 @@ mappings = {
     'setreminders' : setReminder,
     'readreminders' : readReminders,
     'clearreminders' : clearReminders,
+    'playmusic' : playMusic,
+    'downloadmusic' : downloadMusic,
     'goodbye': close
 }
