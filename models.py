@@ -1,6 +1,7 @@
 import pickle
 import os
 import random
+from playsound import playsound
 
 class Reminder():
     def __init__(self, text, dueDate):
@@ -62,7 +63,12 @@ class Music():
         while not ("mp3" in file):
             file = self.musicFiles[random.randint(0, len(self.musicFiles))]
         
-        pass # check that file is found and then start track
+        if len(file) > 4: #min size of music file name
+            playsound(self.musicFiles + "/" + file)
+            return True
+        else:
+            return False
+
 
 
 
