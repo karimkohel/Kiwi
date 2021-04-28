@@ -16,5 +16,5 @@ while True:
         message = speech.takeCommand()
         working = assistant.request(message)
 
-    if message == "exit":
+    if "exit" in message:
         break

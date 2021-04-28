@@ -117,7 +117,7 @@
         {
             "tag": "playmusic",
             "patterns": ["can you play some music", "", "play music", "can you play a song", "put on music", "start the music", "play me a song", "i want to hear some music"],
-            "responses": ["shuffling your music", "lets see your music style", "here you go then", "i hope you can dance", "i was already in the mood for music", "playing music now"]
+            "responses": ["shuffling your music", "lets see your music style", "here you go then", "i hope you can dance", "i was already in the mood for music", "playing music now", "lets dance then"]
         },
 
         {
