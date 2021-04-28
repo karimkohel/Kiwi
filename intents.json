@@ -124,6 +124,12 @@
             "tag": "downloadmusic",
             "patterns": ["install music", "download music", "new music", "can you download new music", "get download new music", "need new music"],
             "responses": ["getting you the music you deserve, what do you want", "what should i download", "what is your desired song", "looking for something new, what should i download", "what should i install"]
+        },
+
+        {
+            "tag": "voicechange",
+            "patterns": ["change voice", "switch voice", "can you change your voice"],
+            "responses": ["i sure can switch my voice, do you want me to?", "i have 2 voices, do you want to switch?", "want me to switch my voice?"]
         }
     ]
 }
