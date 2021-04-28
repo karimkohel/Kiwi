@@ -60,8 +60,8 @@ def waitForWakeupCall(text):
             print("error in wait wake up call")
             exit(1)
 
-def confirmCommand():
-    speak("are you sure you want to confirm your last command")
+def confirmCommand(text = "are you sure you want to confirm your last command"):
+    speak(text)
     confirmation = takeCommand()
     if confirmation.find("yes") >= 0:
         return True
