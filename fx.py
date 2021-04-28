@@ -97,10 +97,11 @@ def downloadMusic(intent):
     pass
 
 def changeVoice(intent):
-    speech.speak(intent)
-    confirmed = speech.confirmCommand()
+    confirmed = speech.confirmCommand(intent)
     if confirmed:
         settings['voice_number'] = 0 if settings['voice_number'] == 1 else 1 # switch value of voice between 0,1
+        with open('settings.json', 'w') as f:
+            json.dump(settings, f)
         speech.speak("ok, done switching my voice but change will take effect after restart")
     else:
         speech("you did not confirm, canceling task")
