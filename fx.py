@@ -93,13 +93,6 @@ def clearReminders(intent):
     else:
         speech("you did not confirm, canceling task")
 
-def playMusic(intent):
-    speech.speak(intent)
-    music = models.Music("K:\\DJ MUSIC\\ENGLISH\\") # TODO : import path from settings file    
-    music.checkFolder()
-    music.checkMusicExists()
-    music.shuffleMusic()
-
 def downloadMusic(intent):
     pass
 
@@ -112,7 +105,6 @@ mappings = {
     'setreminders' : setReminder,
     'readreminders' : readReminders,
     'clearreminders' : clearReminders,
-    'playmusic' : playMusic,
     'downloadmusic' : downloadMusic,
     'goodbye': close
 }
