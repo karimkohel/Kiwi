@@ -95,8 +95,10 @@ def clearReminders(intent):
 
 def playMusic(intent):
     speech.speak(intent)
-    music = speech.takeCommand()
-    pass
+    music = models.Music("K:\\DJ MUSIC\\ENGLISH\\") # TODO : import path from settings file    
+    music.checkFolder()
+    music.checkMusicExists()
+    music.shuffleMusic()
 
 def downloadMusic(intent):
     pass

@@ -63,13 +63,8 @@ class Music():
         while not ("mp3" in file):
             file = self.musicFiles[random.randint(0, len(self.musicFiles))]
         
-        if len(file) > 4: #min size of music file name
-            playsound(self.musicFiles + "/" + file)
+        if len(file) > 4: # min size of music file name
+            playsound(self.folderPath + file, False)
             return True
         else:
             return False
-
-
-
-
-
