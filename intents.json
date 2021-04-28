@@ -92,7 +92,7 @@
 
         {
             "tag": "sleep",
-            "patterns": ["give me a break", "leave me for a while", "go too sleep", "take a break", "take a walk", "leave me for some time", "wait for some time", "ok poppy go to sleep", "it's bed time"],
+            "patterns": ["give me a break", "take a break", "take a walk", "leave me for some time", "wait for some time", "wait a minute"],
             "responses": ["how much minutes do you want me to sleep", "how much minutes do you want me to sleep", "how many minutes should i take", "ok for how many minutes", "how many minutes till i wake up again"]
         },
 
