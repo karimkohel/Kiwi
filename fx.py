@@ -96,6 +96,17 @@ def clearReminders(intent):
 def downloadMusic(intent):
     pass
 
+def changeVoice(intent):
+    speech.speak(intent)
+    confirmed = speech.confirmCommand()
+    if confirmed:
+        settings['voice_number'] = 0 if settings['voice_number'] == 1 else 1 # switch value of voice between 0,1
+        speech.speak("ok, done switching my voice but change will take effect after restart")
+    else:
+        speech("you did not confirm, canceling task")
+    
+
+
 mappings = {
     'time' : getTime,
     'weather' : getWeather,
@@ -106,5 +117,6 @@ mappings = {
     'readreminders' : readReminders,
     'clearreminders' : clearReminders,
     'downloadmusic' : downloadMusic,
+    'voicechange' : changeVoice,
     'goodbye': close
 }
