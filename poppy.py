@@ -11,10 +11,18 @@ while True:
 
     speech.waitForWakeupCall("hey")
     working = True
+    counter = 0
 
     while working:
+        counter += 1
         message = speech.takeCommand()
-        working = assistant.request(message)
+
+        if counter > 5:
+            message = "enough work for today"
+            working = assistant.request(message)
+            break
+        else:
+            working = assistant.request(message)
 
     if "exit" in message:
         break
