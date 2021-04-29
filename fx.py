@@ -14,11 +14,12 @@ import threading
 import models
 import speech
 from pytube import YouTube
+import docx
 
 try:
     with open("settings.json") as f:
         settings = json.load(f)
-else:
+except Exception:
     settings = {'speech_speed': 170, 'voice_number': 1, 'music_folder': ''}
 
 def getTime(intent):
@@ -160,11 +161,18 @@ def changeVoice(intent):
         speech("you did not confirm, canceling task")
 
 def startWordProject(intent):
-    pass
     # ask project name
-    # open word and name it so
+    speech.speak(intent)
+    docName = speech.takeCommand()
+    speech.speak("ok, creating document")
+    # create doc
+    doc = docx.Document()
+    # add paragraph with title to the doc
+    doc.add_paragraph(docName)
+    # save document with name
+    doc.save(os.path.expanduser("~/Desktop"))
+    # open doc on computer
     
-
 
 mappings = {
     'time' : getTime,

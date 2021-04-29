@@ -5,7 +5,7 @@ import json
 try:
     with open("settings.json") as f:
         settings = json.load(f)
-else:
+except Exception:
     settings = {'speech_speed': 170, 'voice_number': 1, 'music_folder': ''}
 
 
