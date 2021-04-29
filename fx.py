@@ -121,10 +121,24 @@ def downloadMusic(intent):
             t = threading.Thread(target=audio.download, args=(musicPath))
         except Exception:
             speech.speak("sorry something went wrong, probably the internet connection")
-            
+
     else:
         speech.speak("you did not confirm, canceling song request")
 
+def playMusic(intent):
+    speech.speak(intent)
+    songName = speech.takeCommand()
+    speech.speak("ok, on it")
+
+    searchLink = 'https://www.youtube.com/results?search_query={}'.format(songName)
+    htmlPage = urllib.request.urlopen(searchLink)
+    video_ids = re.findall(r"watch\?v=(\S{11})", htmlPage.read().decode())
+    videoLink = "https://www.youtube.com/watch?v=" + video_ids[0]
+
+    webbrowser.open(videoLink, new=2)
+    return True
+
+    
 def changeVoice(intent):
     confirmed = speech.confirmCommand(intent)
     if confirmed:
@@ -146,6 +160,7 @@ mappings = {
     'setreminders' : setReminder,
     'readreminders' : readReminders,
     'clearreminders' : clearReminders,
+    'playmusic' : playMusic,
     'downloadmusic' : downloadMusic,
     'voicechange' : changeVoice,
     'goodbye': close
