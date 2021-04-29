@@ -5,6 +5,7 @@ import speech
 assistant = GenericAssistant('intents.json', model_name="test_model", intent_methods=mappings)
 assistant.train_model()
 assistant.save_model()
+# assistant.load_model()
 
 
 while True:
