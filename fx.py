@@ -8,6 +8,7 @@ import sys
 import pickle
 import os
 import json
+import urllib
 
 import models
 import speech
@@ -94,7 +95,23 @@ def clearReminders(intent):
         speech("you did not confirm, canceling task")
 
 def downloadMusic(intent):
-    pass
+    speech.speak(intent)
+    songName = speech.takeCommand()
+    confirmed = speech.confirmCommand(intent)
+
+    if confirmed:
+        try:
+            # get the youtube link for said song
+            searchLink = 'https://www.youtube.com/results?search_query={}'.format(songName)
+            htmlPage = urllib.request.urlopen(searchLink)
+            video_ids = re.findall(r"watch\?v=(\S{11})", htmlPage.read().decode())
+            videoLink = "https://www.youtube.com/watch?v=" + video_ids[0]
+            # use youtube library to download file
+            # place in global music file
+        except Exception:
+            speech.speak("sorry something went wrong, probably the internet connection")
+    else:
+        speech("you did not confirm, canceling song request")
 
 def changeVoice(intent):
     confirmed = speech.confirmCommand(intent)
