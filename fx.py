@@ -9,6 +9,7 @@ import pickle
 import os
 import json
 import urllib
+import threading
 
 import models
 import speech
@@ -108,7 +109,17 @@ def downloadMusic(intent):
             video_ids = re.findall(r"watch\?v=(\S{11})", htmlPage.read().decode())
             videoLink = "https://www.youtube.com/watch?v=" + video_ids[0]
             # use youtube library to download file
-            # place in global music file
+            video = YouTube(videoLink)
+            speech.speak("downloading a song called, {}".format(video.title))
+            # download
+            audio = video.streams.last()
+            if len(settings['music_folder']) < 1:
+                musicPath = os.path.expanduser("~/Desktop")
+            else:
+                musicPath = settings['music_folder']
+            
+            t = threading.Thread(target=audio.download, args=(musicPath))
+
         except Exception:
             speech.speak("sorry something went wrong, probably the internet connection")
     else:
