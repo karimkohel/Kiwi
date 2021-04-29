@@ -12,6 +12,7 @@ import urllib
 
 import models
 import speech
+from pytube import YouTube
 
 with open("settings.json") as f:
     settings = json.load(f)
