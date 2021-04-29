@@ -15,9 +15,11 @@ import models
 import speech
 from pytube import YouTube
 
-with open("settings.json") as f:
-    settings = json.load(f)
-
+try:
+    with open("settings.json") as f:
+        settings = json.load(f)
+else:
+    settings = {'speech_speed': 170, 'voice_number': 1, 'music_folder': ''}
 
 def getTime(intent):
     time = datetime.now().time()
@@ -156,6 +158,11 @@ def changeVoice(intent):
         speech.speak("ok, done switching my voice but change will take effect after restart")
     else:
         speech("you did not confirm, canceling task")
+
+def startWordProject(intent):
+    pass
+    # ask project name
+    # open word and name it so
     
 
 
