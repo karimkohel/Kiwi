@@ -27,10 +27,15 @@ def getTime(intent):
 
 def getWeather(intent):
     api = 'http://api.openweathermap.org/data/2.5/weather?q=Cairo&appid=04a716d70b54bf5c6c24dbb3dfa5db03&units=metric'
-    allData = requests.get(api).json()
-    weather = allData['weather'][0]['description']
-    temp = allData['main']['temp']
-    speech.speak(intent + " " + weather + ", with temperatures around " + str(int(temp)) + " degrees")
+    try:
+        allData = requests.get(api).json()
+        weather = allData['weather'][0]['description']
+        temp = allData['main']['temp']
+        speech.speak(intent + " " + weather + ", with temperatures around " + str(int(temp)) + " degrees")
+    except TimeoutError:
+        speech.speak("internet connection error occured, try again later")
+    except Exception:
+        speech.speak("An error occured, try again later")
 
 def takeNotes(intent):
     speech.speak(intent)
@@ -119,8 +124,10 @@ def downloadMusic(intent):
                 musicPath = settings['music_folder']
             
             t = threading.Thread(target=audio.download, args=(musicPath))
-        except Exception:
+        except TimeoutError:
             speech.speak("sorry something went wrong, probably the internet connection")
+        except Exception:
+            speech.speak("An error occured, try again later")
 
     else:
         speech.speak("you did not confirm, canceling song request")
@@ -129,12 +136,13 @@ def playMusic(intent):
     speech.speak(intent)
     songName = speech.takeCommand()
     speech.speak("ok, on it")
-
-    searchLink = 'https://www.youtube.com/results?search_query={}'.format(songName)
-    htmlPage = urllib.request.urlopen(searchLink)
-    video_ids = re.findall(r"watch\?v=(\S{11})", htmlPage.read().decode())
-    videoLink = "https://www.youtube.com/watch?v=" + video_ids[0]
-
+    try:
+        searchLink = 'https://www.youtube.com/results?search_query={}'.format(songName)
+        htmlPage = urllib.request.urlopen(searchLink)
+        video_ids = re.findall(r"watch\?v=(\S{11})", htmlPage.read().decode())
+        videoLink = "https://www.youtube.com/watch?v=" + video_ids[0]
+    except TimeoutError:
+        speech.speak("internet connection error occured, try again later")
     webbrowser.open(videoLink, new=2)
     return True
 
