@@ -140,7 +140,7 @@
 
         {
             "tag": "functions",
-            "patterns": ["what can you do", "what are your functions", "what do you do"],
+            "patterns": ["what can you do", "what are your functions", "what do you do", "what are you capable of"],
             "responses": ["i am programmed to do lots of things, for instance i can write notes or reminders for you if you wish, i can tell you the time or the weather or maybe even jokes if i am in the mood, i can read your reminders for you too and clear them when they're finished. i can search the internet for anything you ask me to and i can help start a new assignment for you. i like to do fun things too like listen to music that you tell me to play or even download new music for you, i can engage you in interesting conversation whith my different voices if you want me to change my voice, also when you are bored of me you can tell me to go away and i might just leave you alone for some time or give you a break if you need it."]
         }
     ]
