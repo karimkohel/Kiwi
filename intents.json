@@ -128,7 +128,7 @@
 
         {
             "tag": "voicechange",
-            "patterns": ["change voice", "switch voice", "can you change your voice"],
+            "patterns": ["change voice", "switch voice", "can you change your voice", "how many voices do you have"],
             "responses": ["i sure can switch my voice, do you want me to?", "i have 2 voices, do you want to switch?", "want me to switch my voice?"]
         }
     ]
