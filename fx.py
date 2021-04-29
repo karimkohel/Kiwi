@@ -10,6 +10,7 @@ import os
 import json
 import urllib
 import threading
+import subprocess
 
 import models
 import speech
@@ -161,17 +162,14 @@ def changeVoice(intent):
         speech("you did not confirm, canceling task")
 
 def startWordProject(intent):
-    # ask project name
     speech.speak(intent)
     docName = speech.takeCommand()
     speech.speak("ok, creating document")
-    # create doc
     doc = docx.Document()
-    # add paragraph with title to the doc
     doc.add_paragraph(docName)
-    # save document with name
-    doc.save(os.path.expanduser("~/Desktop"))
-    # open doc on computer
+    fileName = os.path.expanduser("~/Desktop") + "\\" + docName + ".docx"
+    doc.save(fileName)
+    os.startfile(fileName)
     
 
 mappings = {
