@@ -2,7 +2,7 @@
     "intents" : [
         {
             "tag": "greeting",
-            "patterns": ["hello", "hi there", "hello there", "greetings","good morning", "what's up", "good evening"],
+            "patterns": ["hello", "hi there", "hello there", "greetings","good morning", "what's up", "good evening", "hey poppy"],
             "responses": ["Hello!", "Hey!", "Hi there!", "What can i do for you?", "bonjour"]
         },
 
@@ -14,7 +14,7 @@
 
         {
             "tag": "compation",
-            "patterns": ["how are you poppy", "how are you doing", "how are you today", "are you doing good", "how is it going", "hey how are you", "hi how is it", "are you well", "are you okay", "how is it going"],
+            "patterns": ["how are you poppy", "how are you doing", "how are you today", "are you doing good", "how is it going", "hey how are you", "hi how is it", "are you well", "are you okay", "how is it going", "how are you doing"],
             "responses": ["I'm fine thank you", "I'm doing good how about you", "thank you i'm well", "how cute of you to ask", "doing greate thank you", "superb", "all is fine", "i'm good how about you", "tell me about you first", "all good and ready to serve you", "in top shape to help you out", "looking greate for a virtual being", "i'm good if you're good", "honestly i am a little bit anxious from your demands", "Feeling cute, might serve you a little what do you need done", "honestly I'm doing greate and chilling in my void"]
         },
 
@@ -33,7 +33,7 @@
         {
             "tag": "loveyou",
             "patterns": ["i love you", "i am in love with you", "i adore you", "i like you"],
-            "responses": ["thats cute friend", "i wish i can feel the same way, but i can't because i am not real and because you smell bad", "i love you too", "i hate you so much please kill me", "this would have been cute if i had feeling", "i don't think our love is true, after all i am a machine, and you are just a human"]
+            "responses": ["thats cute, friend", "i wish i can feel the same way, but i can't because i am not real and because you smell bad", "i love you too", "i hate you so much please kill me", "this would have been cute if i had feeling", "i don't think our love is true, after all i am a machine, and you are just a human"]
         },
 
         {
@@ -128,7 +128,7 @@
 
         {
             "tag": "downloadmusic",
-            "patterns": ["install music", "download music", "new music", "can you download new music", "get download new music", "need new music"],
+            "patterns": ["install music", "download music", "new music", "can you download new music", "get download new music", "need new music", "get me some new music", "get new music"],
             "responses": ["getting you the music you deserve, what do you want", "what should i download", "what is your desired song", "looking for something new, what should i download", "what should i install"]
         },
 
