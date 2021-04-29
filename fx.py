@@ -53,7 +53,7 @@ def search(intent):
     speech.speak(intent)
     searchTopic = speech.takeCommand()
     speech.speak("This is what i found for " + searchTopic)
-    webbrowser.open("https://www.google.com.tr/search?q={}".format(searchTopic), new=2)
+    webbrowser.open("https://www.google.com.tr/search?q={}".format(searchTopic.replace(" ", "+")), new=2)
 
 def close(intent):
     speech.speak(intent)
@@ -113,7 +113,7 @@ def downloadMusic(intent):
     if confirmed:
         try:
             
-            searchLink = 'https://www.youtube.com/results?search_query={}'.format(songName)
+            searchLink = 'https://www.youtube.com/results?search_query={}'.format(songName.replace(" ", "+"))
             htmlPage = urllib.request.urlopen(searchLink)
             video_ids = re.findall(r"watch\?v=(\S{11})", htmlPage.read().decode())
             videoLink = "https://www.youtube.com/watch?v=" + video_ids[0]
@@ -127,11 +127,14 @@ def downloadMusic(intent):
             else:
                 musicPath = settings['music_folder']
             
-            t = threading.Thread(target=audio.download, args=(musicPath))
+            audio.download(musicPath)
+
         except TimeoutError:
             speech.speak("sorry something went wrong, probably the internet connection")
-        except Exception:
-            speech.speak("An error occured, try again later")
+        except Exception as e:
+            speech.speak("An error occured, try again later : ", e)
+        
+        speech.speak("Done downloading.")
 
     else:
         speech.speak("you did not confirm, canceling song request")
@@ -141,7 +144,7 @@ def playMusic(intent):
     songName = speech.takeCommand()
     speech.speak("ok, on it")
     try:
-        searchLink = 'https://www.youtube.com/results?search_query={}'.format(songName)
+        searchLink = 'https://www.youtube.com/results?search_query={}'.format(songName.replace(" ", "+"))
         htmlPage = urllib.request.urlopen(searchLink)
         video_ids = re.findall(r"watch\?v=(\S{11})", htmlPage.read().decode())
         videoLink = "https://www.youtube.com/watch?v=" + video_ids[0]
