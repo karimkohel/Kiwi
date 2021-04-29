@@ -130,6 +130,12 @@
             "tag": "voicechange",
             "patterns": ["change voice", "switch voice", "can you change your voice", "how many voices do you have"],
             "responses": ["i sure can switch my voice, do you want me to?", "i have 2 voices, do you want to switch?", "want me to switch my voice?"]
+        },
+
+        {
+            "tag": "startword",
+            "patterns": ["start a new project for me", "open word", "lets work on a new assignment", "new assignment", "lets start work", "new homework", "open new word"],
+            "responses": ["starting your new assignment word document, what should i name it", "does it have a name that i should now of", "what should i name it", "what should i save it as"]
         }
     ]
 }

@@ -184,5 +184,6 @@ mappings = {
     'playmusic' : playMusic,
     'downloadmusic' : downloadMusic,
     'voicechange' : changeVoice,
+    'startword': startWordProject,
     'goodbye': close
 }
