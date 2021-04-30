@@ -7,6 +7,8 @@ try:
         settings = json.load(f)
 except Exception:
     settings = {'speech_speed': 170, 'voice_number': 1, 'music_folder': ''}
+    with open('settings.json', 'w') as f:
+            json.dump(settings, f)
 
 
 speaker = tts.init()
