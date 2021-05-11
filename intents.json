@@ -7,6 +7,12 @@
         },
 
         {
+            "tag": "fine",
+            "patterns": ["i am fine thank you", "i am good thank you", "i am fine", "all is fine", "everything is ok thank you", "i am ok"],
+            "responses": ["good to know", "i wasn't really asking about you but ok", "marvelous", " ok then", "good to know that someone is ok at least"]
+        },
+
+        {
             "tag": "goodbye",
             "patterns": ["good bye", "see you later", "go away", "bye bye", "close", "exit", "go to sleep", "i want to exit", "thank you you can go now", "thank you bye", "exit"],
             "responses": ["Ok Goodbye!", "Talk later", "ok Bye", "Au revoir", "Hope to see you soon", "Goodbye then", "Ok I'll go now", "see you later"]
