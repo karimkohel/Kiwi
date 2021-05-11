@@ -1,6 +1,7 @@
 import speech_recognition as sr
 import pyttsx3 as tts
 import json
+import random
 
 try:
     with open("settings.json") as f:
@@ -15,6 +16,8 @@ speaker = tts.init()
 voices = speaker.getProperty('voices')
 speaker.setProperty('voice', voices[settings['voice_number']].id)
 speaker.setProperty('rate', settings["speech_speed"])
+
+errorCommands = ["can't take commands with no internet", "i literally can't understand you, there is not internet", "no internet so i can't help you can i", "internet connection error"]
 
 def speak(text):
     speaker.say(text)
@@ -35,9 +38,8 @@ def takeCommand():
                 return text
         except sr.UnknownValueError:
             speak("Sorry I couldn't get that, can you try again?")
-        except Exception:
-            print("error in take command")
-            exit(1)
+        except Exception as e:
+            speak(random.choice(errorCommands))
 
 
 def waitForWakeupCall(text):
@@ -61,9 +63,8 @@ def waitForWakeupCall(text):
 
         except sr.UnknownValueError:
             continue
-        except Exception:
-            print("error in wait wake up call")
-            exit(1)
+        except Exception as e:
+            speak(random.choice(errorCommands))
 
 def confirmCommand(text = "are you sure you want to confirm your last command"):
     speak(text)
