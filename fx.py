@@ -164,7 +164,7 @@ def changeVoice(intent):
             json.dump(settings, f)
         speech.speak("ok, done switching my voice but change will take effect after restart")
     else:
-        speech("you did not confirm, canceling task")
+        speech.speak("you did not confirm, canceling task")
 
 def startWordProject(intent):
     speech.speak(intent)
