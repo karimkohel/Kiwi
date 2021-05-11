@@ -8,7 +8,7 @@
 
         {
             "tag": "goodbye",
-            "patterns": ["good bye", "see you later", "go away", "bye bye", "close", "exit", "go to sleep", "i want to exit", "thank you you can go now", "thank you bye"],
+            "patterns": ["good bye", "see you later", "go away", "bye bye", "close", "exit", "go to sleep", "i want to exit", "thank you you can go now", "thank you bye", "exit"],
             "responses": ["Ok Goodbye!", "Talk later", "ok Bye", "Au revoir", "Hope to see you soon", "Goodbye then", "Ok I'll go now", "see you later"]
         },
 
@@ -140,7 +140,7 @@
 
         {
             "tag": "startword",
-            "patterns": ["start a new project for me", "open word", "lets work on a new assignment", "new assignment", "lets start work", "new homework", "open new word"],
+            "patterns": ["start a new project for me", "open word", "lets work on a new assignment", "new assignment", "lets start work", "new homework", "open new word", "start a new report"],
             "responses": ["starting your new assignment word document, what should i name it", "does it have a name that i should now of", "what should i name it", "what should i save it as"]
         },
 
