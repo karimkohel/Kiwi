@@ -27,3 +27,19 @@ while True:
 
     if "exit" in message:
         break
+
+from tkinter import *
+from PIL import ImageTk,Image
+
+root = Tk()
+root.title('Kiwi')
+root.iconbitmap('icon.ico')
+
+
+my_img1 = ImageTk.PhotoImage(Image.open("kiwi.jpg"))
+
+
+my_label = Label(image=my_img1)
+my_label.grid(row=0, column=0, columnspan=3)
+
+root.mainloop()
