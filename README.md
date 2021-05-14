@@ -38,3 +38,11 @@ this is to remind me what the hell was i doing when i get back to the project on
  - [Tim tutorial](https://youtube.com/playlist?list=PLzMcBGfZo4-ndH9FoC4YWHGXG5RZekt-Q)
  - [random](https://www.youtube.com/watch?v=9KZwRBg4-P0)
  - [random](https://www.youtube.com/watch?v=RpWeNzfSUHw)
+
+
+#### Freezing
+Pyinstaller command 
+
+```bash
+pyinstaller --noconfirm --onedir --windowed --icon "K:/Projects/python/poppy/icon.ico" --debug "all" --noupx --add-data "K:/Projects/python/poppy/model.h5;." --add-data "K:/Projects/python/poppy/model_classes.pkl;." --add-data "K:/Projects/python/poppy/model_words.pkl;." --add-data "K:/Projects/python/poppy/notes.txt;." --paths "K:/Projects/python/poppy" --additional-hooks-dir "K:/Projects/python/poppy/hooks" --hidden-import "tensorflow" --hidden-import "tensorflow.lite.python.lite" --hidden-import "urllib3" --hidden-import "urllib" --hidden-import "numpy" --hidden-import "pkg_resources.py2_warn" --hidden-import "pkg_resources.markers" --add-data "K:/Projects/python/poppy/intents.json;." --add-data "K:/Projects/python/poppy/icon.ico;." --add-data "K:/Projects/python/poppy/kiwi.jpg;."  "K:/Projects/python/poppy/kiwi.py"
+```
