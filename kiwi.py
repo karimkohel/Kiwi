@@ -38,6 +38,7 @@ def mainLoop(app):
 root = Tk()
 root.title('Kiwi')
 root.iconbitmap('icon.ico')
+root.resizable(False, False)
 my_img1 = ImageTk.PhotoImage(Image.open("kiwi.jpg"))
 my_label = Label(image=my_img1)
 my_label.grid(row=0, column=0, columnspan=3)
