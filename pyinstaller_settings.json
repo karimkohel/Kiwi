@@ -15,7 +15,7 @@
   },
   {
    "optionDest": "console",
-   "value": true
+   "value": false
   },
   {
    "optionDest": "icon_file",
@@ -92,6 +92,38 @@
   {
    "optionDest": "hiddenimports",
    "value": "tensorflow.lite.python.lite"
+  },
+  {
+   "optionDest": "hiddenimports",
+   "value": "urllib3"
+  },
+  {
+   "optionDest": "hiddenimports",
+   "value": "urllib"
+  },
+  {
+   "optionDest": "hiddenimports",
+   "value": "numpy"
+  },
+  {
+   "optionDest": "hiddenimports",
+   "value": "pkg_resources.py2_warn"
+  },
+  {
+   "optionDest": "hiddenimports",
+   "value": "pkg_resources.markers"
+  },
+  {
+   "optionDest": "datas",
+   "value": "K:/Projects/python/poppy/intents.json;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "K:/Projects/python/poppy/icon.ico;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "K:/Projects/python/poppy/kiwi.jpg;."
   }
  ],
  "nonPyinstallerOptions": {
