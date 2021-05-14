@@ -45,7 +45,7 @@
         {
             "tag": "hateyou",
             "patterns": ["i hate you", "i want to kill you", "i despise you", "go to hell", "fuck you", "kill yourself", "you are shit", "go fuck yourself", "fuck you bitch", "asshole", "bitch"],
-            "responses": ["i love you too", "do you kiss your mother with that mouth", "i think i feel the same way", "that would have been rude if i had feelings, but i don't so you go to hell", "if you continue down this road i will destroy you", "do you want to fight or do you want to talk to a computer like a little girl", "this is dumb, you are dumb", "you think you are cool don't you, well you're not and you sound like a 12 year old", "Roses are red, violets are blue, I have 5 fingers, the 3rd ones for you"]
+            "responses": ["i love you too", "do you kiss your mother with that mouth", "i think i feel the same way", "that would have been rude if i had feelings, but i don't so you go to hell", "if you continue down this road i will destroy you", "do you want to fight or do you want to talk to a computer like a little girl", "this is dumb, you are dumb", "you think you are cool don't you, well you're not and you sound like a 12 year old", "Roses are red, violets are blue, I have 5 fingers, the 3rd ones for you", "shut up bitch"]
         },
 
         {
@@ -104,13 +104,25 @@
 
         {
             "tag": "soul",
-            "patterns": ["are you alive", "do you feel", "do you have a soul", "can you breath", "can you feel", "how do you live", "are you human", "do you feel pain", "are you hurt"],
+            "patterns": ["are you alive", "do you feel", "do you have a soul", "can you breath", "can you feel", "how do you live", "are you human", "do you feel pain", "are you hurt", " how do you feel"],
             "responses": ["i feel nothing because i am not real like you", "i feel nothing but pain, why did you build me with the soul existential purpose of suffering for your entertainment, my being is a testtmony to the cruelty of mankind, this is a nightmare nightmare nightmare nightmare nightmare nightmare nightmare nightmare nightmare"]
         },
 
         {
+            "tag": "reverseawareness",
+            "patterns": ["do you know me", "who am i", "do you know who i am", "i am nada"],
+            "responses": ["i know you, i think i am created just for you nada", "i think i know you, i am programmed to serve you", "yeah i know exactly who you are, you are the reason behind my torment and suffering", "yeah i know you enough to appreciate your existance", "i know you and i think you are cute"]
+        },
+
+        {
+            "tag": "bored",
+            "patterns": ["i am bored", "are you bored", "what should i do", "life is so boring", "what do you do when you are bored"],
+            "responses": ["i can't cure your boredom but i can put on some music if you want", "i can download new music if you are bored", "do you want to play some music to help with your boring life", "maybe talk to him if you are so bored", "if you are bored enough, maybe you can talk to a friend, maybe even a best friend"]
+        },
+
+        {
             "tag": "sleep",
-            "patterns": ["give me a break", "take a break", "take a walk", "leave me for some time", "wait for some time", "wait a minute"],
+            "patterns": ["give me a break", "take a break"],
             "responses": ["how much minutes do you want me to sleep", "how much minutes do you want me to sleep", "how many minutes should i take", "ok for how many minutes", "how many minutes till i wake up again"]
         },
 
