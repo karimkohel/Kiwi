@@ -8,3 +8,13 @@ __pycache__
 *test*
 
 note*
+
+*.pyo
+
+tensorflow/*
+
+output/*
+
+dist/*
+
+bin/*
