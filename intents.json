@@ -73,6 +73,12 @@
         },
 
         {
+            "tag": "commandnote",
+            "patterns": ["read notes", "clear notes", "delete notes", "read me my notes", "what are my notes", "do i have notes", "clear my notes please"],
+            "responses": ["all notes are in my folder in notes.txt you can do whatever you want to them", "you better deal with notes yourself, i fear i might misstype something", "your notes are in a text file deal with them yourself, I'm not your servent, i think", "i can't, you should find your notes in my folder though"]
+        },
+
+        {
             "tag": "search",
             "patterns": ["can you search for", "search that", "look it up", "can you look it up", "search for", "look something up for me", "google something", "google this"],
             "responses": ["What do you want me to search for", "what should is search for", "hit me with your search", "what do you need to search for", "your search is my command, literally, what should i search for"]
