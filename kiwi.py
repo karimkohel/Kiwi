@@ -16,7 +16,7 @@ def mainLoop(app):
 
     while True:
 
-        speech.waitForWakeupCall("hey")
+        speech.waitForWakeupCall("kiwi")
         working = True
         counter = 0
 
