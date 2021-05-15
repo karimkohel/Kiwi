@@ -17,10 +17,13 @@ Kiwi is a virtual assistant born to serve and help around on your laptop, you ca
     Kiwi is designed to be started up and then minimized with no intention of maximizing it again, all you need is to talk to her while she is minimized and unable to distract you.
 
  - #### Complexity
-    Kiwi can carry out complext tasks that will require a conversation to happen so when a complex task is called you should answer the follow up questions.
+    Kiwi can carry out complex tasks that will require a conversation to happen so when a complex task is called you should answer the follow up questions.
 
  - #### What to do
     Kiwi can tell you exactly what she can do so just ask it, but if you are bored try talking to it without asking anything and it would engage you in conversation
+
+- #### Exiting
+    if you tell kiwi to go away or bye bye it will just go into sleeping mode and won't totally shut down, which is the intended concept so it can be ready whenever you want it again, but for exiting kiwi completely you **just tell it that you want to exit** and that should do the trick
 
 ### How to install Kiwi
 
