@@ -7,9 +7,9 @@ import threading, sys
 
 
 assistant = GenericAssistant('intents.json', model_name="model", intent_methods=mappings)
-# assistant.train_model()
-# assistant.save_model()
-assistant.load_model()
+assistant.train_model()
+assistant.save_model()
+# assistant.load_model()
 
 
 def mainLoop(app):

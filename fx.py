@@ -15,6 +15,7 @@ import subprocess
 import models
 import speech
 from pytube import YouTube
+from bs4 import BeautifulSoup
 import docx
 
 try:
@@ -175,6 +176,27 @@ def startWordProject(intent):
     fileName = os.path.expanduser("~/Desktop") + "\\" + docName + ".docx"
     doc.save(fileName)
     os.startfile(fileName)
+
+def prayerTime(intent):
+    """ Legacy function """
+    try:
+        source = requests.get('https://egypt.timesprayer.com/en/prayer-times-in-cairo.html').text
+        soup = BeautifulSoup(source, 'lxml')
+        prayer_time = soup.find('div',id='countdown').text
+        salah = soup.find('div',class_='info mobile').h3.text
+    except:
+        try:
+            source = requests.get('https://www.prayer-times.info/en/egypt/cairo/').text
+            soup = BeautifulSoup(source, 'lxml')
+            prayer_time = soup.find('div',id='next_pray').text
+            salah = soup.find('div',id='next_pray').h3.text
+        except:
+            source = None
+    if source == None:
+        speech.speak("sorry cannot find prayer time right now. Maybe try again later")
+    else:
+        speech.speak(intent + " " + prayer_time)
+
     
 
 mappings = {
@@ -190,5 +212,6 @@ mappings = {
     'downloadmusic' : downloadMusic,
     'voicechange' : changeVoice,
     'startword': startWordProject,
+    'prayer': prayerTime,
     'goodbye': close
 }
